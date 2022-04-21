@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lesson2.4</title>
+</head>
+<body>
+	<script>
+		'use strict';
+		
+		function getResult() {
+	
+		let num1 = +prompt("Введите первое число");
+		let num2 = +prompt("Введите второе число");
+		let oper = prompt("Введите sum prois raz del для вычисления");
+		let result = "";
+
+		switch(oper) {
+			case "sum":
+				result = num1 + num2;
+				break;
+			case "prois":
+				result = num1 * num2;
+				break;
+			case "raz":
+				result = num1 - num2;
+				break;
+			case "del":
+				result = num1 / num2;
+				break;
+			}
+
+		return result;
+		}
+		let result = getResult();
+		alert("Ваш результат: " + result);
+
+		
+		
+</script>
+</body>

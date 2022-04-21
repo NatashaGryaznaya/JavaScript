@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lesson2.3</title>
+</head>
+<body>
+	<script>
+		'use strict';
+
+		let a = +prompt("Введите первое число");
+		let b = +prompt("Введите второе число");
+		let result = null;
+
+		if (a >= 0 && b >= 0) {
+			result = a - b
+			alert("Разность этих чисел " + result)
+		} else if (a < 0 && b < 0) {
+			result = a * b
+			alert("Произведение этих чисел " + result)
+		} else if (a >= 0 && b < 0) {
+			result = a + b
+			alert("Сумма этих чисел " + result)
+		} else if (a < 0 && b >= 0) {
+			result = a + b
+			alert("Сумма этих чисел " + result)
+		} else {
+			alert("Необходимо ввести числа")
+		}
+
+	</script>
+</body>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lesson2.5</title>
+</head>
+<body>
+	<script>
+		'use strict';
+		
+		function mathOperation(arg1, arg2, operation) {
+	
+		arg1 = +prompt("Введите первое число");
+		arg2 = +prompt("Введите второе число");
+		operation = prompt("Введите sum proiz raz del для вычисления");
+		let result = "";
+
+		switch(operation) {
+			case "sum":
+				result = arg1 + arg2;
+				break;
+			case "proiz":
+				result = arg1 * arg2;
+				break;
+			case "raz":
+				result = arg1 - arg2;
+				break;
+			case "del":
+				result = arg1 / arg2;
+				break;
+			}
+
+		return result;
+		}
+		let result = mathOperation();
+		alert("Ваш результат: " + result);
+
+		
+		
+</script>
+</body>
